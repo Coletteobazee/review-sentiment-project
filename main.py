@@ -8,7 +8,12 @@ def run(filepath: str):
     """
     Loads customer reviews from a JSON file, gets sentiment labels,
     and visualizes the sentiment distribution.
-    Returns a list of sentiment labels.
+
+    Args:
+        filepath (str): The path to the JSON file containing the customer reviews.
+
+    Returns:
+        list: A list of sentiment labels for each review.
     """
     # open the json object
     with open(filepath, "r") as file:
